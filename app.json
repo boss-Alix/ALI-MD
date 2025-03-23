@@ -10,7 +10,7 @@
     "SESSION_ID": {
       "description": "Put the session-id here.",
       "required": true,
-      "value": ""
+      "value": "gQgCRD5Y#XdSqTFw9yeQYjQOJzf6Zih3FJuX4ef1l11NloqZmcpA"
     },  
     
     "STICKER_NAME": {
@@ -28,7 +28,7 @@
     "MODE": {
       "description": "select your bot work type public-private-inbox-group.",
       "required": false,
-      "value": "public"
+      "value": "private"
       
     },
     
@@ -36,7 +36,7 @@
     "ALWAYS_ONLINE": {
       "description": "Make it true if want always online.",
       "required": false,
-      "value": "false"  
+      "value": "true"  
     },    
   
     "AUTO_VOICE": {
@@ -54,7 +54,7 @@
     "AUTO_STICKER": {
       "description": "Make it true if you want automatic sticker.",
       "required": false,
-      "value": "false"
+      "value": "true"
     }, 
 
 
@@ -79,7 +79,7 @@
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*SEEN YOUR STATUS JUST NOW ALI-MD 🍒*"
+      "value": "*SEEN YOUR STATUS JUST NOW ALIX-MD 🍒*"
    
      }, 
 
