@@ -3,7 +3,7 @@ const { cmd } = require("../command");
 const moment = require("moment");
 
 let botStartTime = Date.now(); // Enregistrement de l'heure de démarrage du bot
-const ALIVE_IMG = "https://cdn.ironman.my.id/i/2du3i5.jpg"; // Assurez-vous que cette URL est valide
+const ALIVE_IMG = "https://files.catbox.moe/inu6r8.jpg; // Assurez-vous que cette URL est valide
 
 cmd({
     pattern: "alive",
@@ -23,13 +23,13 @@ cmd({
         const runtimeHours = Math.floor(runtimeMilliseconds / (1000 * 60 * 60));
 
         const formattedInfo = `
-🌟 *ALI MD STATUS* 🌟
+🌟 *ESCADRON MD STATUS* 🌟
 Hey 👋🏻 ${pushname}
 🕒 *Time*: ${currentTime}
 📅 *Date*: ${currentDate}
 ⏳ *Uptime*: ${runtimeHours} hours, ${runtimeMinutes} minutes, ${runtimeSeconds} seconds
 
-*🤖sᴛᴀᴛᴜs*: *ᴀʟɪ-ᴍᴅ ᴀʟɪᴠᴇ ᴀɴᴅ ʀᴇᴀᴅʏ*
+*🤖sᴛᴀᴛᴜs*: *ESCADRON-ᴍᴅ ᴀʟɪᴠᴇ ᴀɴᴅ ʀᴇᴀᴅʏ*
 
 *🤍ᴍᴀᴅᴇ ᴡɪᴛʜ ʟᴏᴠᴇ*
         `.trim();
