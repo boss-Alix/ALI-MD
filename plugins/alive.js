@@ -23,13 +23,13 @@ cmd({
         const runtimeHours = Math.floor(runtimeMilliseconds / (1000 * 60 * 60));
 
         const formattedInfo = `
-🌟 *ALI MD STATUS* 🌟
+🌟 *Alix ESCADRON* 🌟
 Hey 👋🏻 ${pushname}
 🕒 *Time*: ${currentTime}
 📅 *Date*: ${currentDate}
 ⏳ *Uptime*: ${runtimeHours} hours, ${runtimeMinutes} minutes, ${runtimeSeconds} seconds
 
-*🤖sᴛᴀᴛᴜs*: *ᴀʟɪ-ᴍᴅ ᴀʟɪᴠᴇ ᴀɴᴅ ʀᴇᴀᴅʏ*
+*🤖sᴛᴀᴛᴜs*: *Alix est vivant*
 
 *🤍ᴍᴀᴅᴇ ᴡɪᴛʜ ʟᴏᴠᴇ*
         `.trim();
