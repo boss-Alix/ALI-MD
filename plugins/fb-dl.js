@@ -14,7 +14,7 @@ cmd({
     // Check if the user provided a Facebook video URL
     const fbUrl = args[0];
     if (!fbUrl || !fbUrl.includes("facebook.com")) {
-      return reply('*𝐏ℓєαʂє 𝐏ɼ๏νιɖє 𝐀 fb҇ 𝐕ιɖє๏ ๏ɼ ɼєєℓ 𝐔ɼℓ..*');
+      return reply('*mete yon bon lyen(lenk).*');
     }
 
     // Add a reaction to indicate processing
@@ -28,7 +28,7 @@ cmd({
 
     // Check if the API response is valid
     if (!response.data || !response.data.status || !response.data.video) {
-      return reply('❌ Unable to fetch the video. Please check the URL and try again.');
+      return reply('❌ nou paka jwenn li,gade si lyen an bon.');
     }
 
     // Extract the video details
@@ -43,7 +43,7 @@ cmd({
     // Download the video
     const videoResponse = await axios.get(downloadLink, { responseType: 'arraybuffer' });
     if (!videoResponse.data) {
-      return reply('❌ Failed to download the video. Please try again later.');
+      return reply('❌ nou paka jwenn li,gade si lyen an bon..');
     }
 
     // Prepare the video buffer
@@ -52,10 +52,10 @@ cmd({
     // Send the video with details
     await conn.sendMessage(from, {
       video: videoBuffer,
-      caption: `*🫟𝐀ɭīī 𝐌Ɗ 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃*\n\n` +
+      caption: `*🫟Alix ESCADRON😊*\n\n` +
         `🔖 *TITLE*: ${title}\n` +
         `📏 *QUALITY*: ${downloads.find(d => d.quality === "HD") ? "HD" : "SD"}\n\n` +
-        `> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʟɪ*`,
+        `> *©Alix la fò tout bon vre*`,
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 999,
