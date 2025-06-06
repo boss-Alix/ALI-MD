@@ -57,7 +57,7 @@ async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAd
 
         // Proper message extraction
         let message = body.slice(body.indexOf(command) + command.length).trim();
-        if (!message) message = "ATTENTION ADMINS"; // Default message
+        if (!message) message = "group sa pa gen admins"; // Default message
 
         let teks = `*▢ GROUP : ${groupName}*\n*▢ ADMINS : ${totalAdmins}*\n*▢ MESSAGE: ${message}*\n\n‎*╭───❍「 ADMINS MENTION 」❍*\n`;
 
@@ -66,7 +66,7 @@ async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAd
             teks += `*│${randomEmoji} ᩧ𝆺ྀི𝅥* @${admin.split('@')[0]}\n`;
         }
 
-       // teks += "└──✪ ALI ┃ MD ✪──";
+       // teks += "└──✪ ESCADRON ┃ MD ✪──";
 
         conn.sendMessage(from, { text: teks, mentions: admins }, { quoted: mek });
 
@@ -309,13 +309,13 @@ cmd({
         // Format the output message
         const message = `
 ╭────「 *GROUP INFO* 」────◆
-│ 🏷️ *ɢʀᴏᴜᴘ ɴᴀᴍᴇ:* ${groupName}  
-│ 🆔 *ɢʀᴏᴜᴘ ɪᴅ:* ${from}  
-│ 👥 *ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀs:* ${memberCount}  
-│ 👨🏻‍💻 *ᴄʀᴇᴀᴛᴏʀ:* ${creator}  
-│ 📅 *ᴄʀᴇᴀᴛᴇᴅ ᴏɴ:* ${creationDate}  
-│ 👑 *ᴀᴅᴍɪɴs:*  
-│ ${groupAdmins}  
+│ 🏷️ *NON GROUPE LAN SE:* ${groupName}  
+│ 🆔 *NIMERO ID AN SE:* ${from}  
+│ 👥 *KANTITE MANB LAN:* ${memberCount}  
+│ 👨🏻‍💻 *MOUN KI KREYE GROUP LAN:* ${creator}  
+│ 📅 *DAT LI TE KREYE:* ${creationDate}  
+│ 👑 *MOUN KI ADMIN YO:*  
+│ ${groupAdmins}
 ╰────────────────────◆`;
 
         // Send the group information with mentions
@@ -349,7 +349,7 @@ async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAd
         const senderJid = senderNumber + "@s.whatsapp.net";
 
         if (!groupAdmins.includes(senderJid) && senderNumber !== botOwner) {
-            return reply("*📛 σɴℓʏ gʀσᴜᴘ α∂мιɴs σʀ тнє σωɴєʀ ᴄαɴ ᴜsє тнιѕ ᴄσммαɴ∂.*");
+            return reply("*📛 sèl nan group ou ka use kòmand sa.*");
         }
 
         // Ensure group metadata is fetched properly
@@ -365,7 +365,7 @@ async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAd
 
         // Proper message extraction
         let message = body.slice(body.indexOf(command) + command.length).trim();
-        if (!message) message = "ATTENTION EVERYONE"; // Default message
+        if (!message) message = "eee mh nan kay lan oui"; // Default message
 
         let teks = `*▢ GROUP : ${groupName}*\n*▢ MEMBERS : ${totalMembers}*\n*▢ MESSAGE : ${message}*\n\n*╭┈─「 \`𓆩ု᪳𝐌𝐄𝐍𝐓𝐈𝐎𝐍𝐒ှ᪳𓆪\` 」┈❍*\n`;
 
@@ -510,7 +510,7 @@ async (conn, mek, m, { from, isGroup, senderNumber, isAdmins, isBotAdmins, reply
         if (!isBotAdmins) return reply("*📛 ɴᴇᴇᴅ ᴛᴏ ʙᴇ ᴀɴ ᴀᴅᴍɪɴ ᴛᴏ ᴜɴᴍᴜᴛᴇ ᴛʜᴇ ɢʀᴏᴜᴘ*");
 
         await conn.groupSettingUpdate(from, "announcement");
-        reply("*gʀσᴜρ мᴜтє∂ sᴜᴄᴄєѕѕfᴜℓℓу🔐*");
+        reply("group sa fèmen pa bot Alix lan🔐*");
     } catch (e) {
         console.error("Error muting group:", e);
         reply("❌ Failed to mute the group. Please try again.");
@@ -532,7 +532,7 @@ async (conn, mek, m, { from, isGroup, senderNumber, isAdmins, isBotAdmins, reply
         if (!isBotAdmins) return reply("*📛 ɴᴇᴇᴅ ᴛᴏ ʙᴇ ᴀɴ ᴀᴅᴍɪɴ ᴛᴏ ᴜɴᴍᴜᴛᴇ ᴛʜᴇ ɢʀᴏᴜᴘ*");
 
         await conn.groupSettingUpdate(from, "not_announcement");
-        reply("*gʀσᴜρ ᴜɴмυтє∂ sᴜᴄᴄєѕѕfᴜℓℓу🔓*");
+        reply("*group sa ouvè pa bot Alix lan🔐*")🔓*");
     } catch (e) {
         console.error("Error unmuting group:", e);
         reply("❌ Failed to unmute the group. Please try again.");
